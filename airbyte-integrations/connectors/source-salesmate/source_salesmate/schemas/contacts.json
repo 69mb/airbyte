@@ -1,0 +1,535 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "id": {
+            "$id": "#root/id",
+            "title": "Id",
+            "type": "integer",
+            "default": 0
+        },
+        "firstName": {
+            "$id": "#root/firstName",
+            "title": "Firstname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "lastName": {
+            "$id": "#root/lastName",
+            "title": "Lastname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "mobile": {
+            "$id": "#root/mobile",
+            "title": "Mobile",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "email": {
+            "$id": "#root/email",
+            "title": "Email",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "company": {
+            "$id": "#root/company",
+            "title": "Company",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$id": "#root/company/id",
+                    "title": "Id",
+                    "type": "integer",
+                    "default": 0
+                },
+                "value": {
+                    "$id": "#root/company/value",
+                    "title": "Value",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "name": {
+                    "$id": "#root/company/name",
+                    "title": "Name",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "website": {
+                    "$id": "#root/company/website",
+                    "title": "Website",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "phone": {
+                    "$id": "#root/company/phone",
+                    "title": "Phone",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "otherPhone": {
+                    "$id": "#root/company/otherPhone",
+                    "title": "Otherphone",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "imagePath": {
+                    "$id": "#root/company/imagePath",
+                    "title": "Imagepath",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                }
+            }
+        },
+        "designation": {
+            "$id": "#root/designation",
+            "title": "Designation",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "owner": {
+            "$id": "#root/owner",
+            "title": "Owner",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$id": "#root/owner/id",
+                    "title": "Id",
+                    "type": "integer",
+                    "default": 0
+                },
+                "value": {
+                    "$id": "#root/owner/value",
+                    "title": "Value",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "name": {
+                    "$id": "#root/owner/name",
+                    "title": "Name",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "imagePath": {
+                    "$id": "#root/owner/imagePath",
+                    "title": "Imagepath",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "firstName": {
+                    "$id": "#root/owner/firstName",
+                    "title": "Firstname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "lastName": {
+                    "$id": "#root/owner/lastName",
+                    "title": "Lastname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "email": {
+                    "$id": "#root/owner/email",
+                    "title": "Email",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "mobile": {
+                    "$id": "#root/owner/mobile",
+                    "title": "Mobile",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                }
+            }
+        },
+        "type": {
+            "$id": "#root/type",
+            "title": "Type",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "timezone": {
+            "$id": "#root/timezone",
+            "title": "Timezone",
+            "type": "null",
+            "default": null
+        },
+        "website": {
+            "$id": "#root/website",
+            "title": "Website",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "facebookHandle": {
+            "$id": "#root/facebookHandle",
+            "title": "Facebookhandle",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "linkedInHandle": {
+            "$id": "#root/linkedInHandle",
+            "title": "Linkedinhandle",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "instagramHandle": {
+            "$id": "#root/instagramHandle",
+            "title": "Instagramhandle",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "emailOptOut": {
+            "$id": "#root/emailOptOut",
+            "title": "Emailoptout",
+            "type": "boolean",
+            "default": true
+        },
+        "emailOptOutReason": {
+            "$id": "#root/emailOptOutReason",
+            "title": "Emailoptoutreason",
+            "type": "null",
+            "default": null
+        },
+        "smsOptOut": {
+            "$id": "#root/smsOptOut",
+            "title": "Smsoptout",
+            "type": "boolean",
+            "default": true
+        },
+        "description": {
+            "$id": "#root/description",
+            "title": "Description",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "tags": {
+            "$id": "#root/tags",
+            "title": "Tags",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "billingAddressLine1": {
+            "$id": "#root/billingAddressLine1",
+            "title": "Billingaddressline1",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "billingAddressLine2": {
+            "$id": "#root/billingAddressLine2",
+            "title": "Billingaddressline2",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "billingCity": {
+            "$id": "#root/billingCity",
+            "title": "Billingcity",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "billingCountry": {
+            "$id": "#root/billingCountry",
+            "title": "Billingcountry",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "name": {
+            "$id": "#root/name",
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "createdBy": {
+            "$id": "#root/createdBy",
+            "title": "Createdby",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$id": "#root/createdBy/id",
+                    "title": "Id",
+                    "type": "integer",
+                    "default": 0
+                },
+                "value": {
+                    "$id": "#root/createdBy/value",
+                    "title": "Value",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "name": {
+                    "$id": "#root/createdBy/name",
+                    "title": "Name",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                }
+            }
+        },
+        "createdAt": {
+            "$id": "#root/createdAt",
+            "title": "Createdat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "lastModifiedBy": {
+            "$id": "#root/lastModifiedBy",
+            "title": "Lastmodifiedby",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$id": "#root/lastModifiedBy/id",
+                    "title": "Id",
+                    "type": "integer",
+                    "default": 0
+                },
+                "value": {
+                    "$id": "#root/lastModifiedBy/value",
+                    "title": "Value",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "name": {
+                    "$id": "#root/lastModifiedBy/name",
+                    "title": "Name",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                }
+            }
+        },
+        "lastModifiedAt": {
+            "$id": "#root/lastModifiedAt",
+            "title": "Lastmodifiedat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "photo": {
+            "$id": "#root/photo",
+            "title": "Photo",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "isDeleted": {
+            "$id": "#root/isDeleted",
+            "title": "Isdeleted",
+            "type": "boolean",
+            "default": true
+        },
+        "deletedBy": {
+            "$id": "#root/deletedBy",
+            "title": "Deletedby",
+            "type": "null",
+            "default": null
+        },
+        "deletedAt": {
+            "$id": "#root/deletedAt",
+            "title": "Deletedat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "latitude": {
+            "$id": "#root/latitude",
+            "title": "Latitude",
+            "type": "number",
+            "default": 0.0
+        },
+        "lastNoteAddedBy": {
+            "$id": "#root/lastNoteAddedBy",
+            "title": "Lastnoteaddedby",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$id": "#root/lastNoteAddedBy/id",
+                    "title": "Id",
+                    "type": "null",
+                    "default": null
+                },
+                "value": {
+                    "$id": "#root/lastNoteAddedBy/value",
+                    "title": "Value",
+                    "type": "null",
+                    "default": null
+                },
+                "name": {
+                    "$id": "#root/lastNoteAddedBy/name",
+                    "title": "Name",
+                    "type": "null",
+                    "default": null
+                }
+            }
+        },
+        "longitude": {
+            "$id": "#root/longitude",
+            "title": "Longitude",
+            "type": "number",
+            "default": 0.0
+        },
+        "lastNoteAddedAt": {
+            "$id": "#root/lastNoteAddedAt",
+            "title": "Lastnoteaddedat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "lastNote": {
+            "$id": "#root/lastNote",
+            "title": "Lastnote",
+            "type": "null",
+            "default": null
+        },
+        "createdLongitude": {
+            "$id": "#root/createdLongitude",
+            "title": "Createdlongitude",
+            "type": "null",
+            "default": null
+        },
+        "createdLatitude": {
+            "$id": "#root/createdLatitude",
+            "title": "Createdlatitude",
+            "type": "null",
+            "default": null
+        },
+        "createdAddress": {
+            "$id": "#root/createdAddress",
+            "title": "Createdaddress",
+            "type": "null",
+            "default": null
+        },
+        "salesmateScore": {
+            "$id": "#root/salesmateScore",
+            "title": "Salesmatescore",
+            "type": "integer",
+            "default": 0
+        },
+        "lastCommunicationAt": {
+            "$id": "#root/lastCommunicationAt",
+            "title": "Lastcommunicationat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "lastCommunicationMode": {
+            "$id": "#root/lastCommunicationMode",
+            "title": "Lastcommunicationmode",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "lastCommunicationBy": {
+            "$id": "#root/lastCommunicationBy",
+            "title": "Lastcommunicationby",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "wonDealCount": {
+            "$id": "#root/wonDealCount",
+            "title": "Wondealcount",
+            "type": "integer",
+            "default": 0
+        },
+        "totalAmountOfWonDeal": {
+            "$id": "#root/totalAmountOfWonDeal",
+            "title": "Totalamountofwondeal",
+            "type": "integer",
+            "default": 0
+        },
+        "lostDealCount": {
+            "$id": "#root/lostDealCount",
+            "title": "Lostdealcount",
+            "type": "integer",
+            "default": 0
+        },
+        "totalAmountOfLostDeal": {
+            "$id": "#root/totalAmountOfLostDeal",
+            "title": "Totalamountoflostdeal",
+            "type": "integer",
+            "default": 0
+        },
+        "totalActivities": {
+            "$id": "#root/totalActivities",
+            "title": "Totalactivities",
+            "type": "integer",
+            "default": 0
+        },
+        "openDealCount": {
+            "$id": "#root/openDealCount",
+            "title": "Opendealcount",
+            "type": "integer",
+            "default": 0
+        },
+        "closedActivities": {
+            "$id": "#root/closedActivities",
+            "title": "Closedactivities",
+            "type": "integer",
+            "default": 0
+        },
+        "lastEmailReceivedAt": {
+            "$id": "#root/lastEmailReceivedAt",
+            "title": "Lastemailreceivedat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "lastEmailSentAt": {
+            "$id": "#root/lastEmailSentAt",
+            "title": "Lastemailsentat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "emailMessageCount": {
+            "$id": "#root/emailMessageCount",
+            "title": "Emailmessagecount",
+            "type": "integer",
+            "default": 0
+        },
+        "totalAmountOfOpenDeal": {
+            "$id": "#root/totalAmountOfOpenDeal",
+            "title": "Totalamountofopendeal",
+            "type": "integer",
+            "default": 0
+        },
+        "openActivities": {
+            "$id": "#root/openActivities",
+            "title": "Openactivities",
+            "type": "integer",
+            "default": 0
+        }
+    }
+}

@@ -378,3 +378,8 @@
   dockerRepository: airbyte/source-typeform
   dockerImageTag: 0.1.0
   documentationUrl: https://docs.airbyte.io/integrations/sources/typeform
+- sourceDefinitionId: be412650-fd6b-492e-a488-00f2a416a44d
+  name: Typeform
+  dockerRepository: airbyte/source-salesmate
+  dockerImageTag: 0.1.0
+  documentationUrl: https://docs.airbyte.io/integrations/sources/salesmate

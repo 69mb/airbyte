@@ -1,0 +1,2767 @@
+{
+    "streams": [
+        {
+            "stream": {
+                "name": "companies",
+                "supported_sync_modes": [
+                    "full_refresh"
+                ],
+                "json_schema": {
+                    "properties": {
+                        "id": {
+                            "$id": "#/properties/id",
+                            "type": "integer",
+                            "title": "The id schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                8956
+                            ]
+                        },
+                        "name": {
+                            "$id": "#/properties/name",
+                            "type": "string",
+                            "title": "The name schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Zuweiz general stores "
+                            ]
+                        },
+                        "owner": {
+                            "$id": "#/properties/owner",
+                            "type": "object",
+                            "title": "The owner schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "id": 43,
+                                    "value": "Virginia Mwaniki",
+                                    "imagePath": "",
+                                    "firstName": "Virginia",
+                                    "lastName": "Mwaniki",
+                                    "name": "Virginia Mwaniki",
+                                    "email": "virginiamwaniki19@gmail.com"
+                                }
+                            ],
+                            "required": [
+                                "id",
+                                "value",
+                                "imagePath",
+                                "firstName",
+                                "lastName",
+                                "name",
+                                "email"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "$id": "#/properties/owner/properties/id",
+                                    "type": "integer",
+                                    "title": "The id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        43
+                                    ]
+                                },
+                                "value": {
+                                    "$id": "#/properties/owner/properties/value",
+                                    "type": "string",
+                                    "title": "The value schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Virginia Mwaniki"
+                                    ]
+                                },
+                                "imagePath": {
+                                    "$id": "#/properties/owner/properties/imagePath",
+                                    "type": "string",
+                                    "title": "The imagePath schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        ""
+                                    ]
+                                },
+                                "firstName": {
+                                    "$id": "#/properties/owner/properties/firstName",
+                                    "type": "string",
+                                    "title": "The firstName schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Virginia"
+                                    ]
+                                },
+                                "lastName": {
+                                    "$id": "#/properties/owner/properties/lastName",
+                                    "type": "string",
+                                    "title": "The lastName schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Mwaniki"
+                                    ]
+                                },
+                                "name": {
+                                    "$id": "#/properties/owner/properties/name",
+                                    "type": "string",
+                                    "title": "The name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Virginia Mwaniki"
+                                    ]
+                                },
+                                "email": {
+                                    "$id": "#/properties/owner/properties/email",
+                                    "type": "string",
+                                    "title": "The email schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "virginiamwaniki19@gmail.com"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "phone": {
+                            "$id": "#/properties/phone",
+                            "type": "string",
+                            "title": "The phone schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "0722285550"
+                            ]
+                        },
+                        "skypeId": {
+                            "$id": "#/properties/skypeId",
+                            "type": "string",
+                            "title": "The skypeId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "linkedInHandle": {
+                            "$id": "#/properties/linkedInHandle",
+                            "type": "string",
+                            "title": "The linkedInHandle schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "googlePlusHandle": {
+                            "$id": "#/properties/googlePlusHandle",
+                            "type": "string",
+                            "title": "The googlePlusHandle schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "website": {
+                            "$id": "#/properties/website",
+                            "type": "string",
+                            "title": "The website schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "otherPhone": {
+                            "$id": "#/properties/otherPhone",
+                            "type": "string",
+                            "title": "The otherPhone schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "facebookHandle": {
+                            "$id": "#/properties/facebookHandle",
+                            "type": "string",
+                            "title": "The facebookHandle schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "twitterHandle": {
+                            "$id": "#/properties/twitterHandle",
+                            "type": "string",
+                            "title": "The twitterHandle schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "currency": {
+                            "$id": "#/properties/currency",
+                            "type": "object",
+                            "title": "The currency schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "displayLabel": "KES - KES",
+                                    "code": "KES",
+                                    "value": "KES"
+                                }
+                            ],
+                            "required": [
+                                "displayLabel",
+                                "code",
+                                "value"
+                            ],
+                            "properties": {
+                                "displayLabel": {
+                                    "$id": "#/properties/currency/properties/displayLabel",
+                                    "type": "string",
+                                    "title": "The displayLabel schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "KES - KES"
+                                    ]
+                                },
+                                "code": {
+                                    "$id": "#/properties/currency/properties/code",
+                                    "type": "string",
+                                    "title": "The code schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "KES"
+                                    ]
+                                },
+                                "value": {
+                                    "$id": "#/properties/currency/properties/value",
+                                    "type": "string",
+                                    "title": "The value schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "KES"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "billingAddressLine1": {
+                            "$id": "#/properties/billingAddressLine1",
+                            "type": "string",
+                            "title": "The billingAddressLine1 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Eastleigh "
+                            ]
+                        },
+                        "billingAddressLine2": {
+                            "$id": "#/properties/billingAddressLine2",
+                            "type": "string",
+                            "title": "The billingAddressLine2 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Near joster supermarket "
+                            ]
+                        },
+                        "billingCity": {
+                            "$id": "#/properties/billingCity",
+                            "type": "string",
+                            "title": "The billingCity schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Nairobi "
+                            ]
+                        },
+                        "billingState": {
+                            "$id": "#/properties/billingState",
+                            "type": "string",
+                            "title": "The billingState schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "billingZipCode": {
+                            "$id": "#/properties/billingZipCode",
+                            "type": "string",
+                            "title": "The billingZipCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "billingCountry": {
+                            "$id": "#/properties/billingCountry",
+                            "type": "string",
+                            "title": "The billingCountry schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Kenya"
+                            ]
+                        },
+                        "description": {
+                            "$id": "#/properties/description",
+                            "type": "string",
+                            "title": "The description schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Can manage over 700k in a month "
+                            ]
+                        },
+                        "tags": {
+                            "$id": "#/properties/tags",
+                            "type": "string",
+                            "title": "The tags schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "numberOfEmployees": {
+                            "$id": "#/properties/numberOfEmployees",
+                            "type": "integer",
+                            "title": "The numberOfEmployees schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "annualRevenue": {
+                            "$id": "#/properties/annualRevenue",
+                            "type": "integer",
+                            "title": "The annualRevenue schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                400000
+                            ]
+                        },
+                        "emailOptOut": {
+                            "$id": "#/properties/emailOptOut",
+                            "type": "integer",
+                            "title": "The emailOptOut schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "smsOptOut": {
+                            "$id": "#/properties/smsOptOut",
+                            "type": "integer",
+                            "title": "The smsOptOut schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "shippingAddressLine1": {
+                            "$id": "#/properties/shippingAddressLine1",
+                            "type": "string",
+                            "title": "The shippingAddressLine1 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "shippingAddressLine2": {
+                            "$id": "#/properties/shippingAddressLine2",
+                            "type": "string",
+                            "title": "The shippingAddressLine2 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "shippingCity": {
+                            "$id": "#/properties/shippingCity",
+                            "type": "string",
+                            "title": "The shippingCity schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "shippingState": {
+                            "$id": "#/properties/shippingState",
+                            "type": "string",
+                            "title": "The shippingState schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "shippingCountry": {
+                            "$id": "#/properties/shippingCountry",
+                            "type": "string",
+                            "title": "The shippingCountry schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "shippingZipCode": {
+                            "$id": "#/properties/shippingZipCode",
+                            "type": "string",
+                            "title": "The shippingZipCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "createdBy": {
+                            "$id": "#/properties/createdBy",
+                            "type": "object",
+                            "title": "The createdBy schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "id": 43,
+                                    "value": "Virginia Mwaniki"
+                                }
+                            ],
+                            "required": [
+                                "id",
+                                "value"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "$id": "#/properties/createdBy/properties/id",
+                                    "type": "integer",
+                                    "title": "The id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        43
+                                    ]
+                                },
+                                "value": {
+                                    "$id": "#/properties/createdBy/properties/value",
+                                    "type": "string",
+                                    "title": "The value schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Virginia Mwaniki"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "createdAt": {
+                            "$id": "#/properties/createdAt",
+                            "type": "string",
+                            "title": "The createdAt schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Dec 09, 2020 01:17 PM"
+                            ]
+                        },
+                        "lastModifiedBy": {
+                            "$id": "#/properties/lastModifiedBy",
+                            "type": "object",
+                            "title": "The lastModifiedBy schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "id": 104,
+                                    "value": "Ashley Karani"
+                                }
+                            ],
+                            "required": [
+                                "id",
+                                "value"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "$id": "#/properties/lastModifiedBy/properties/id",
+                                    "type": "integer",
+                                    "title": "The id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        104
+                                    ]
+                                },
+                                "value": {
+                                    "$id": "#/properties/lastModifiedBy/properties/value",
+                                    "type": "string",
+                                    "title": "The value schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Ashley Karani"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "lastModifiedAt": {
+                            "$id": "#/properties/lastModifiedAt",
+                            "type": "string",
+                            "title": "The lastModifiedAt schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "May 10, 2021 05:13 PM"
+                            ]
+                        },
+                        "isDeleted": {
+                            "$id": "#/properties/isDeleted",
+                            "type": "integer",
+                            "title": "The isDeleted schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "deletedBy": {
+                            "$id": "#/properties/deletedBy",
+                            "type": "string",
+                            "title": "The deletedBy schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "deletedAt": {
+                            "$id": "#/properties/deletedAt",
+                            "type": "string",
+                            "title": "The deletedAt schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "latitude": {
+                            "$id": "#/properties/latitude",
+                            "type": "string",
+                            "title": "The latitude schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "-1.28265870"
+                            ]
+                        },
+                        "longitude": {
+                            "$id": "#/properties/longitude",
+                            "type": "string",
+                            "title": "The longitude schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "36.85129680"
+                            ]
+                        },
+                        "lastNoteAddedAt": {
+                            "$id": "#/properties/lastNoteAddedAt",
+                            "type": "string",
+                            "title": "The lastNoteAddedAt schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "lastNoteAddedBy": {
+                            "$id": "#/properties/lastNoteAddedBy",
+                            "type": "null",
+                            "title": "The lastNoteAddedBy schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "lastNote": {
+                            "$id": "#/properties/lastNote",
+                            "type": "null",
+                            "title": "The lastNote schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "lastCommunicationAt": {
+                            "$id": "#/properties/lastCommunicationAt",
+                            "type": "string",
+                            "title": "The lastCommunicationAt schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "lastCommunicationMode": {
+                            "$id": "#/properties/lastCommunicationMode",
+                            "type": "string",
+                            "title": "The lastCommunicationMode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "lastCommunicationBy": {
+                            "$id": "#/properties/lastCommunicationBy",
+                            "type": "string",
+                            "title": "The lastCommunicationBy schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "wonDealCount": {
+                            "$id": "#/properties/wonDealCount",
+                            "type": "integer",
+                            "title": "The wonDealCount schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "totalAmountOfWonDeal": {
+                            "$id": "#/properties/totalAmountOfWonDeal",
+                            "type": "integer",
+                            "title": "The totalAmountOfWonDeal schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "lostDealCount": {
+                            "$id": "#/properties/lostDealCount",
+                            "type": "integer",
+                            "title": "The lostDealCount schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "totalAmountOfLostDeal": {
+                            "$id": "#/properties/totalAmountOfLostDeal",
+                            "type": "integer",
+                            "title": "The totalAmountOfLostDeal schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "totalAmountOfOpenDeal": {
+                            "$id": "#/properties/totalAmountOfOpenDeal",
+                            "type": "integer",
+                            "title": "The totalAmountOfOpenDeal schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "openDealCount": {
+                            "$id": "#/properties/openDealCount",
+                            "type": "integer",
+                            "title": "The openDealCount schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "totalActivities": {
+                            "$id": "#/properties/totalActivities",
+                            "type": "integer",
+                            "title": "The totalActivities schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "closedActivities": {
+                            "$id": "#/properties/closedActivities",
+                            "type": "integer",
+                            "title": "The closedActivities schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "openActivities": {
+                            "$id": "#/properties/openActivities",
+                            "type": "integer",
+                            "title": "The openActivities schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "createdLongitude": {
+                            "$id": "#/properties/createdLongitude",
+                            "type": "number",
+                            "title": "The createdLongitude schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0.0,
+                            "examples": [
+                                36.8510256
+                            ]
+                        },
+                        "createdLatitude": {
+                            "$id": "#/properties/createdLatitude",
+                            "type": "number",
+                            "title": "The createdLatitude schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0.0,
+                            "examples": [
+                                -1.282141
+                            ]
+                        },
+                        "createdAddress": {
+                            "$id": "#/properties/createdAddress",
+                            "type": "string",
+                            "title": "The createdAddress schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "FIrst Ave Eastleigh, Nairobi, Kenya"
+                            ]
+                        },
+                        "instagramHandle": {
+                            "$id": "#/properties/instagramHandle",
+                            "type": "string",
+                            "title": "The instagramHandle schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "type": {
+                            "$id": "#/properties/type",
+                            "type": "object",
+                            "title": "The type schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "name": "Lead",
+                                    "icon": "contact-type green",
+                                    "value": "Lead"
+                                }
+                            ],
+                            "required": [
+                                "name",
+                                "icon",
+                                "value"
+                            ],
+                            "properties": {
+                                "name": {
+                                    "$id": "#/properties/type/properties/name",
+                                    "type": "string",
+                                    "title": "The name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Lead"
+                                    ]
+                                },
+                                "icon": {
+                                    "$id": "#/properties/type/properties/icon",
+                                    "type": "string",
+                                    "title": "The icon schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "contact-type green"
+                                    ]
+                                },
+                                "value": {
+                                    "$id": "#/properties/type/properties/value",
+                                    "type": "string",
+                                    "title": "The value schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Lead"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "associatedContacts": {
+                            "$id": "#/properties/associatedContacts",
+                            "type": "integer",
+                            "title": "The associatedContacts schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "textCustomField1": {
+                            "$id": "#/properties/textCustomField1",
+                            "type": "string",
+                            "title": "The textCustomField1 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "intCustomField1": {
+                            "$id": "#/properties/intCustomField1",
+                            "type": "integer",
+                            "title": "The intCustomField1 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "decimalCustomField1": {
+                            "$id": "#/properties/decimalCustomField1",
+                            "type": "integer",
+                            "title": "The decimalCustomField1 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "textCustomField3": {
+                            "$id": "#/properties/textCustomField3",
+                            "type": "string",
+                            "title": "The textCustomField3 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Minimart"
+                            ]
+                        },
+                        "textCustomField4": {
+                            "$id": "#/properties/textCustomField4",
+                            "type": "string",
+                            "title": "The textCustomField4 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Moha"
+                            ]
+                        },
+                        "textCustomField5": {
+                            "$id": "#/properties/textCustomField5",
+                            "type": "string",
+                            "title": "The textCustomField5 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "textCustomField6": {
+                            "$id": "#/properties/textCustomField6",
+                            "type": "string",
+                            "title": "The textCustomField6 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Makadara"
+                            ]
+                        },
+                        "textCustomField7": {
+                            "$id": "#/properties/textCustomField7",
+                            "type": "string",
+                            "title": "The textCustomField7 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "textCustomField2": {
+                            "$id": "#/properties/textCustomField2",
+                            "type": "string",
+                            "title": "The textCustomField2 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "textCustomField8": {
+                            "$id": "#/properties/textCustomField8",
+                            "type": "string",
+                            "title": "The textCustomField8 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "multiSelectCustomField1": {
+                            "$id": "#/properties/multiSelectCustomField1",
+                            "type": "string",
+                            "title": "The multiSelectCustomField1 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "textCustomField9": {
+                            "$id": "#/properties/textCustomField9",
+                            "type": "string",
+                            "title": "The textCustomField9 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "company": {
+                            "$id": "#/properties/company",
+                            "type": "null",
+                            "title": "The company schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        }
+                    }
+                }
+            },
+            "sync_mode": "full_refresh",
+            "destination_sync_mode": "overwrite"
+        },
+        {
+            "stream": {
+                "name": "activities",
+                "supported_sync_modes": [
+                    "full_refresh"
+                ],
+                "json_schema": {
+                    "properties": {
+                        "id": {
+                            "$id": "#root/id", 
+                            "title": "Id", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "title": {
+                            "$id": "#root/title", 
+                            "title": "Title", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "dueDate": {
+                            "$id": "#root/dueDate", 
+                            "title": "Duedate", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "description": {
+                            "$id": "#root/description", 
+                            "title": "Description", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "type": {
+                            "$id": "#root/type", 
+                            "title": "Type", 
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "$id": "#root/type/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "icon": {
+                                    "$id": "#root/type/icon", 
+                                    "title": "Icon", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "value": {
+                                    "$id": "#root/type/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "isCompleted": {
+                            "$id": "#root/isCompleted", 
+                            "title": "Iscompleted", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "duration": {
+                            "$id": "#root/duration", 
+                            "title": "Duration", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "owner": {
+                            "$id": "#root/owner", 
+                            "title": "Owner", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/owner/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/owner/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "imagePath": {
+                                    "$id": "#root/owner/imagePath", 
+                                    "title": "Imagepath", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/owner/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "firstName": {
+                                    "$id": "#root/owner/firstName", 
+                                    "title": "Firstname", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "lastName": {
+                                    "$id": "#root/owner/lastName", 
+                                    "title": "Lastname", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "tags": {
+                            "$id": "#root/tags", 
+                            "title": "Tags", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "primaryContact": {
+                            "$id": "#root/primaryContact", 
+                            "title": "Primarycontact", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "relatedTo": {
+                            "$id": "#root/relatedTo", 
+                            "title": "Relatedto", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "primaryCompany": {
+                            "$id": "#root/primaryCompany", 
+                            "title": "Primarycompany", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "outcome": {
+                            "$id": "#root/outcome", 
+                            "title": "Outcome", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "isCalendarInvite": {
+                            "$id": "#root/isCalendarInvite", 
+                            "title": "Iscalendarinvite", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "completedAt": {
+                            "$id": "#root/completedAt", 
+                            "title": "Completedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "relatedToModule": {
+                            "$id": "#root/relatedToModule", 
+                            "title": "Relatedtomodule", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "createdBy": {
+                            "$id": "#root/createdBy", 
+                            "title": "Createdby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/createdBy/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/createdBy/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/createdBy/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "createdAt": {
+                            "$id": "#root/createdAt", 
+                            "title": "Createdat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastModifiedBy": {
+                            "$id": "#root/lastModifiedBy", 
+                            "title": "Lastmodifiedby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/lastModifiedBy/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/lastModifiedBy/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/lastModifiedBy/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "lastModifiedAt": {
+                            "$id": "#root/lastModifiedAt", 
+                            "title": "Lastmodifiedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "isDeleted": {
+                            "$id": "#root/isDeleted", 
+                            "title": "Isdeleted", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "deletedBy": {
+                            "$id": "#root/deletedBy", 
+                            "title": "Deletedby", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "deletedAt": {
+                            "$id": "#root/deletedAt", 
+                            "title": "Deletedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastNoteAddedBy": {
+                            "$id": "#root/lastNoteAddedBy", 
+                            "title": "Lastnoteaddedby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/lastNoteAddedBy/id", 
+                                    "title": "Id", 
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "value": {
+                                    "$id": "#root/lastNoteAddedBy/value", 
+                                    "title": "Value", 
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "name": {
+                                    "$id": "#root/lastNoteAddedBy/name", 
+                                    "title": "Name", 
+                                    "type": "null",
+                                    "default": null
+                                }
+                            }
+                        }
+                ,
+                        "lastNoteAddedAt": {
+                            "$id": "#root/lastNoteAddedAt", 
+                            "title": "Lastnoteaddedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastNote": {
+                            "$id": "#root/lastNote", 
+                            "title": "Lastnote", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "createdLongitude": {
+                            "$id": "#root/createdLongitude", 
+                            "title": "Createdlongitude", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "createdLatitude": {
+                            "$id": "#root/createdLatitude", 
+                            "title": "Createdlatitude", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "createdAddress": {
+                            "$id": "#root/createdAddress", 
+                            "title": "Createdaddress", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "recurrenceId": {
+                            "$id": "#root/recurrenceId", 
+                            "title": "Recurrenceid", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "recordingUrl": {
+                            "$id": "#root/recordingUrl", 
+                            "title": "Recordingurl", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "recurrence": {
+                            "$id": "#root/recurrence", 
+                            "title": "Recurrence", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "associatedCallId": {
+                            "$id": "#root/associatedCallId", 
+                            "title": "Associatedcallid", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/associatedCallId/id", 
+                                    "title": "Id", 
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "recordingPath": {
+                                    "$id": "#root/associatedCallId/recordingPath", 
+                                    "title": "Recordingpath", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "followers": {
+                            "$id": "#root/followers", 
+                            "title": "Followers", 
+                            "type": "array",
+                            "default": [],
+                            "items":{
+                                "$id": "#root/followers/items", 
+                                "title": "Items", 
+                                "type": "object",
+                                "properties": {
+                                    "isOwner": {
+                                        "$id": "#root/followers/items/isOwner", 
+                                        "title": "Isowner", 
+                                        "type": "boolean",
+                                        "default": true
+                                    },
+                                    "userId": {
+                                        "$id": "#root/followers/items/userId", 
+                                        "title": "Userid", 
+                                        "type": "integer",
+                                        "default": 0
+                                    },
+                                    "followerName": {
+                                        "$id": "#root/followers/items/followerName", 
+                                        "title": "Followername", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    },
+                                    "followerEmailAddress": {
+                                        "$id": "#root/followers/items/followerEmailAddress", 
+                                        "title": "Followeremailaddress", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    },
+                                    "photo": {
+                                        "$id": "#root/followers/items/photo", 
+                                        "title": "Photo", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    },
+                                    "canView": {
+                                        "$id": "#root/followers/items/canView", 
+                                        "title": "Canview", 
+                                        "type": "boolean",
+                                        "default": true
+                                    },
+                                    "imagePath": {
+                                        "$id": "#root/followers/items/imagePath", 
+                                        "title": "Imagepath", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    },
+                                    "type": {
+                                        "$id": "#root/followers/items/type", 
+                                        "title": "Type", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    }
+                                }
+                            }
+                
+                        }
+                    }
+                }
+            },
+            "sync_mode": "full_refresh",
+            "destination_sync_mode": "overwrite"
+        },
+        {
+            "stream": {
+                "name": "contacts",
+                "supported_sync_modes": [
+                    "full_refresh"
+                ],
+                "json_schema": {
+                    "properties": {
+                        "id": {
+                            "$id": "#root/id", 
+                            "title": "Id", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "firstName": {
+                            "$id": "#root/firstName", 
+                            "title": "Firstname", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastName": {
+                            "$id": "#root/lastName", 
+                            "title": "Lastname", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "mobile": {
+                            "$id": "#root/mobile", 
+                            "title": "Mobile", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "email": {
+                            "$id": "#root/email", 
+                            "title": "Email", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "company": {
+                            "$id": "#root/company", 
+                            "title": "Company", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/company/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/company/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/company/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "website": {
+                                    "$id": "#root/company/website", 
+                                    "title": "Website", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "phone": {
+                                    "$id": "#root/company/phone", 
+                                    "title": "Phone", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "otherPhone": {
+                                    "$id": "#root/company/otherPhone", 
+                                    "title": "Otherphone", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "imagePath": {
+                                    "$id": "#root/company/imagePath", 
+                                    "title": "Imagepath", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "designation": {
+                            "$id": "#root/designation", 
+                            "title": "Designation", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "owner": {
+                            "$id": "#root/owner", 
+                            "title": "Owner", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/owner/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/owner/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/owner/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "imagePath": {
+                                    "$id": "#root/owner/imagePath", 
+                                    "title": "Imagepath", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "firstName": {
+                                    "$id": "#root/owner/firstName", 
+                                    "title": "Firstname", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "lastName": {
+                                    "$id": "#root/owner/lastName", 
+                                    "title": "Lastname", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "email": {
+                                    "$id": "#root/owner/email", 
+                                    "title": "Email", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "mobile": {
+                                    "$id": "#root/owner/mobile", 
+                                    "title": "Mobile", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "type": {
+                            "$id": "#root/type", 
+                            "title": "Type", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "timezone": {
+                            "$id": "#root/timezone", 
+                            "title": "Timezone", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "website": {
+                            "$id": "#root/website", 
+                            "title": "Website", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "facebookHandle": {
+                            "$id": "#root/facebookHandle", 
+                            "title": "Facebookhandle", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "linkedInHandle": {
+                            "$id": "#root/linkedInHandle", 
+                            "title": "Linkedinhandle", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "instagramHandle": {
+                            "$id": "#root/instagramHandle", 
+                            "title": "Instagramhandle", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "emailOptOut": {
+                            "$id": "#root/emailOptOut", 
+                            "title": "Emailoptout", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "emailOptOutReason": {
+                            "$id": "#root/emailOptOutReason", 
+                            "title": "Emailoptoutreason", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "smsOptOut": {
+                            "$id": "#root/smsOptOut", 
+                            "title": "Smsoptout", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "description": {
+                            "$id": "#root/description", 
+                            "title": "Description", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "tags": {
+                            "$id": "#root/tags", 
+                            "title": "Tags", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "billingAddressLine1": {
+                            "$id": "#root/billingAddressLine1", 
+                            "title": "Billingaddressline1", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "billingAddressLine2": {
+                            "$id": "#root/billingAddressLine2", 
+                            "title": "Billingaddressline2", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "billingCity": {
+                            "$id": "#root/billingCity", 
+                            "title": "Billingcity", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "billingCountry": {
+                            "$id": "#root/billingCountry", 
+                            "title": "Billingcountry", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "name": {
+                            "$id": "#root/name", 
+                            "title": "Name", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "createdBy": {
+                            "$id": "#root/createdBy", 
+                            "title": "Createdby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/createdBy/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/createdBy/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/createdBy/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "createdAt": {
+                            "$id": "#root/createdAt", 
+                            "title": "Createdat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastModifiedBy": {
+                            "$id": "#root/lastModifiedBy", 
+                            "title": "Lastmodifiedby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/lastModifiedBy/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/lastModifiedBy/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/lastModifiedBy/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "lastModifiedAt": {
+                            "$id": "#root/lastModifiedAt", 
+                            "title": "Lastmodifiedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "photo": {
+                            "$id": "#root/photo", 
+                            "title": "Photo", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "isDeleted": {
+                            "$id": "#root/isDeleted", 
+                            "title": "Isdeleted", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "deletedBy": {
+                            "$id": "#root/deletedBy", 
+                            "title": "Deletedby", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "deletedAt": {
+                            "$id": "#root/deletedAt", 
+                            "title": "Deletedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "latitude": {
+                            "$id": "#root/latitude", 
+                            "title": "Latitude", 
+                            "type": "number",
+                            "default": 0.0
+                        },
+                        "lastNoteAddedBy": {
+                            "$id": "#root/lastNoteAddedBy", 
+                            "title": "Lastnoteaddedby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/lastNoteAddedBy/id", 
+                                    "title": "Id", 
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "value": {
+                                    "$id": "#root/lastNoteAddedBy/value", 
+                                    "title": "Value", 
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "name": {
+                                    "$id": "#root/lastNoteAddedBy/name", 
+                                    "title": "Name", 
+                                    "type": "null",
+                                    "default": null
+                                }
+                            }
+                        }
+                ,
+                        "longitude": {
+                            "$id": "#root/longitude", 
+                            "title": "Longitude", 
+                            "type": "number",
+                            "default": 0.0
+                        },
+                        "lastNoteAddedAt": {
+                            "$id": "#root/lastNoteAddedAt", 
+                            "title": "Lastnoteaddedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastNote": {
+                            "$id": "#root/lastNote", 
+                            "title": "Lastnote", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "createdLongitude": {
+                            "$id": "#root/createdLongitude", 
+                            "title": "Createdlongitude", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "createdLatitude": {
+                            "$id": "#root/createdLatitude", 
+                            "title": "Createdlatitude", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "createdAddress": {
+                            "$id": "#root/createdAddress", 
+                            "title": "Createdaddress", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "salesmateScore": {
+                            "$id": "#root/salesmateScore", 
+                            "title": "Salesmatescore", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "lastCommunicationAt": {
+                            "$id": "#root/lastCommunicationAt", 
+                            "title": "Lastcommunicationat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastCommunicationMode": {
+                            "$id": "#root/lastCommunicationMode", 
+                            "title": "Lastcommunicationmode", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastCommunicationBy": {
+                            "$id": "#root/lastCommunicationBy", 
+                            "title": "Lastcommunicationby", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "wonDealCount": {
+                            "$id": "#root/wonDealCount", 
+                            "title": "Wondealcount", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "totalAmountOfWonDeal": {
+                            "$id": "#root/totalAmountOfWonDeal", 
+                            "title": "Totalamountofwondeal", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "lostDealCount": {
+                            "$id": "#root/lostDealCount", 
+                            "title": "Lostdealcount", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "totalAmountOfLostDeal": {
+                            "$id": "#root/totalAmountOfLostDeal", 
+                            "title": "Totalamountoflostdeal", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "totalActivities": {
+                            "$id": "#root/totalActivities", 
+                            "title": "Totalactivities", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "openDealCount": {
+                            "$id": "#root/openDealCount", 
+                            "title": "Opendealcount", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "closedActivities": {
+                            "$id": "#root/closedActivities", 
+                            "title": "Closedactivities", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "lastEmailReceivedAt": {
+                            "$id": "#root/lastEmailReceivedAt", 
+                            "title": "Lastemailreceivedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastEmailSentAt": {
+                            "$id": "#root/lastEmailSentAt", 
+                            "title": "Lastemailsentat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "emailMessageCount": {
+                            "$id": "#root/emailMessageCount", 
+                            "title": "Emailmessagecount", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "totalAmountOfOpenDeal": {
+                            "$id": "#root/totalAmountOfOpenDeal", 
+                            "title": "Totalamountofopendeal", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "openActivities": {
+                            "$id": "#root/openActivities", 
+                            "title": "Openactivities", 
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }
+                }
+            },
+            "sync_mode": "full_refresh",
+            "destination_sync_mode": "overwrite"
+        },
+        {
+            "stream": {
+                "name": "deals",
+                "supported_sync_modes": [
+                    "full_refresh"
+                ],
+                "json_schema": {
+                    "properties": {
+                        "id": {
+                            "$id": "#root/id", 
+                            "title": "Id", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "isWinProbabilityModifiedByUser": {
+                            "$id": "#root/isWinProbabilityModifiedByUser", 
+                            "title": "Iswinprobabilitymodifiedbyuser", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "title": {
+                            "$id": "#root/title", 
+                            "title": "Title", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "primaryContact": {
+                            "$id": "#root/primaryContact", 
+                            "title": "Primarycontact", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "lostReason": {
+                            "$id": "#root/lostReason", 
+                            "title": "Lostreason", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "primaryCompany": {
+                            "$id": "#root/primaryCompany", 
+                            "title": "Primarycompany", 
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "$id": "#root/primaryCompany/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "canView": {
+                                    "$id": "#root/primaryCompany/canView", 
+                                    "title": "Canview", 
+                                    "type": "boolean",
+                                    "default": true
+                                },
+                                "name": {
+                                    "$id": "#root/primaryCompany/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "owner": {
+                                    "$id": "#root/primaryCompany/owner", 
+                                    "title": "Owner", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "id": {
+                                    "$id": "#root/primaryCompany/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "photo": {
+                                    "$id": "#root/primaryCompany/photo", 
+                                    "title": "Photo", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "phone": {
+                                    "$id": "#root/primaryCompany/phone", 
+                                    "title": "Phone", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "otherPhone": {
+                                    "$id": "#root/primaryCompany/otherPhone", 
+                                    "title": "Otherphone", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "imagePath": {
+                                    "$id": "#root/primaryCompany/imagePath", 
+                                    "title": "Imagepath", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "winProbability": {
+                            "$id": "#root/winProbability", 
+                            "title": "Winprobability", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "owner": {
+                            "$id": "#root/owner", 
+                            "title": "Owner", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/owner/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/owner/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/owner/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "imagePath": {
+                                    "$id": "#root/owner/imagePath", 
+                                    "title": "Imagepath", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "firstName": {
+                                    "$id": "#root/owner/firstName", 
+                                    "title": "Firstname", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "lastName": {
+                                    "$id": "#root/owner/lastName", 
+                                    "title": "Lastname", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "estimatedCloseDate": {
+                            "$id": "#root/estimatedCloseDate", 
+                            "title": "Estimatedclosedate", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "dealValue": {
+                            "$id": "#root/dealValue", 
+                            "title": "Dealvalue", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "currency": {
+                            "$id": "#root/currency", 
+                            "title": "Currency", 
+                            "type": "object",
+                            "properties": {
+                                "displayLabel": {
+                                    "$id": "#root/currency/displayLabel", 
+                                    "title": "Displaylabel", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "code": {
+                                    "$id": "#root/currency/code", 
+                                    "title": "Code", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "value": {
+                                    "$id": "#root/currency/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "pipeline": {
+                            "$id": "#root/pipeline", 
+                            "title": "Pipeline", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "stage": {
+                            "$id": "#root/stage", 
+                            "title": "Stage", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "source": {
+                            "$id": "#root/source", 
+                            "title": "Source", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "priority": {
+                            "$id": "#root/priority", 
+                            "title": "Priority", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "status": {
+                            "$id": "#root/status", 
+                            "title": "Status", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "description": {
+                            "$id": "#root/description", 
+                            "title": "Description", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "tags": {
+                            "$id": "#root/tags", 
+                            "title": "Tags", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastCommunicationAt": {
+                            "$id": "#root/lastCommunicationAt", 
+                            "title": "Lastcommunicationat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "closedDate": {
+                            "$id": "#root/closedDate", 
+                            "title": "Closeddate", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastActivityBy": {
+                            "$id": "#root/lastActivityBy", 
+                            "title": "Lastactivityby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/lastActivityBy/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/lastActivityBy/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/lastActivityBy/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "lastCommunicationBy": {
+                            "$id": "#root/lastCommunicationBy", 
+                            "title": "Lastcommunicationby", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "closedPipeline": {
+                            "$id": "#root/closedPipeline", 
+                            "title": "Closedpipeline", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "closedStage": {
+                            "$id": "#root/closedStage", 
+                            "title": "Closedstage", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastCommunicationMode": {
+                            "$id": "#root/lastCommunicationMode", 
+                            "title": "Lastcommunicationmode", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "createdBy": {
+                            "$id": "#root/createdBy", 
+                            "title": "Createdby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/createdBy/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/createdBy/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/createdBy/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "lastActivityAt": {
+                            "$id": "#root/lastActivityAt", 
+                            "title": "Lastactivityat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "createdAt": {
+                            "$id": "#root/createdAt", 
+                            "title": "Createdat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastModifiedBy": {
+                            "$id": "#root/lastModifiedBy", 
+                            "title": "Lastmodifiedby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/lastModifiedBy/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "value": {
+                                    "$id": "#root/lastModifiedBy/value", 
+                                    "title": "Value", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                },
+                                "name": {
+                                    "$id": "#root/lastModifiedBy/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "lastModifiedAt": {
+                            "$id": "#root/lastModifiedAt", 
+                            "title": "Lastmodifiedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "isDeleted": {
+                            "$id": "#root/isDeleted", 
+                            "title": "Isdeleted", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "deletedBy": {
+                            "$id": "#root/deletedBy", 
+                            "title": "Deletedby", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "deletedAt": {
+                            "$id": "#root/deletedAt", 
+                            "title": "Deletedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastNoteAddedBy": {
+                            "$id": "#root/lastNoteAddedBy", 
+                            "title": "Lastnoteaddedby", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/lastNoteAddedBy/id", 
+                                    "title": "Id", 
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "value": {
+                                    "$id": "#root/lastNoteAddedBy/value", 
+                                    "title": "Value", 
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "name": {
+                                    "$id": "#root/lastNoteAddedBy/name", 
+                                    "title": "Name", 
+                                    "type": "null",
+                                    "default": null
+                                }
+                            }
+                        }
+                ,
+                        "lastNoteAddedAt": {
+                            "$id": "#root/lastNoteAddedAt", 
+                            "title": "Lastnoteaddedat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastNote": {
+                            "$id": "#root/lastNote", 
+                            "title": "Lastnote", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "createdLongitude": {
+                            "$id": "#root/createdLongitude", 
+                            "title": "Createdlongitude", 
+                            "type": "number",
+                            "default": 0.0
+                        },
+                        "createdLatitude": {
+                            "$id": "#root/createdLatitude", 
+                            "title": "Createdlatitude", 
+                            "type": "number",
+                            "default": 0.0
+                        },
+                        "createdAddress": {
+                            "$id": "#root/createdAddress", 
+                            "title": "Createdaddress", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "followers": {
+                            "$id": "#root/followers", 
+                            "title": "Followers", 
+                            "type": "array",
+                            "default": [],
+                            "items":{
+                                "$id": "#root/followers/items", 
+                                "title": "Items", 
+                                "type": "object",
+                                "properties": {
+                                    "isOwner": {
+                                        "$id": "#root/followers/items/isOwner", 
+                                        "title": "Isowner", 
+                                        "type": "boolean",
+                                        "default": true
+                                    },
+                                    "userId": {
+                                        "$id": "#root/followers/items/userId", 
+                                        "title": "Userid", 
+                                        "type": "integer",
+                                        "default": 0
+                                    },
+                                    "followerName": {
+                                        "$id": "#root/followers/items/followerName", 
+                                        "title": "Followername", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    },
+                                    "followerEmailAddress": {
+                                        "$id": "#root/followers/items/followerEmailAddress", 
+                                        "title": "Followeremailaddress", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    },
+                                    "photo": {
+                                        "$id": "#root/followers/items/photo", 
+                                        "title": "Photo", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    },
+                                    "canView": {
+                                        "$id": "#root/followers/items/canView", 
+                                        "title": "Canview", 
+                                        "type": "boolean",
+                                        "default": true
+                                    },
+                                    "imagePath": {
+                                        "$id": "#root/followers/items/imagePath", 
+                                        "title": "Imagepath", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    },
+                                    "type": {
+                                        "$id": "#root/followers/items/type", 
+                                        "title": "Type", 
+                                        "type": "string",
+                                        "default": "",
+                                        "pattern": "^.*$"
+                                    }
+                                }
+                            }
+                
+                        }
+                    }
+                }
+            },
+            "sync_mode": "full_refresh",
+            "destination_sync_mode": "overwrite"
+        },
+        {
+            "stream": {
+                "name": "users",
+                "supported_sync_modes": [
+                    "full_refresh"
+                ],
+                "json_schema": {
+                    "properties": {
+                        "id": {
+                            "$id": "#root/id", 
+                            "title": "Id", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "firstName": {
+                            "$id": "#root/firstName", 
+                            "title": "Firstname", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "lastName": {
+                            "$id": "#root/lastName", 
+                            "title": "Lastname", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "email": {
+                            "$id": "#root/email", 
+                            "title": "Email", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "mobile": {
+                            "$id": "#root/mobile", 
+                            "title": "Mobile", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "profileId": {
+                            "$id": "#root/profileId", 
+                            "title": "Profileid", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "roleId": {
+                            "$id": "#root/roleId", 
+                            "title": "Roleid", 
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "phoneNo": {
+                            "$id": "#root/phoneNo", 
+                            "title": "Phoneno", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "extensionNo": {
+                            "$id": "#root/extensionNo", 
+                            "title": "Extensionno", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "addressLine1": {
+                            "$id": "#root/addressLine1", 
+                            "title": "Addressline1", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "addressLine2": {
+                            "$id": "#root/addressLine2", 
+                            "title": "Addressline2", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "area": {
+                            "$id": "#root/area", 
+                            "title": "Area", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "city": {
+                            "$id": "#root/city", 
+                            "title": "City", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "state": {
+                            "$id": "#root/state", 
+                            "title": "State", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "country": {
+                            "$id": "#root/country", 
+                            "title": "Country", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "zipCode": {
+                            "$id": "#root/zipCode", 
+                            "title": "Zipcode", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "timezone": {
+                            "$id": "#root/timezone", 
+                            "title": "Timezone", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "photo": {
+                            "$id": "#root/photo", 
+                            "title": "Photo", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "dateFormat": {
+                            "$id": "#root/dateFormat", 
+                            "title": "Dateformat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "timeFormat": {
+                            "$id": "#root/timeFormat", 
+                            "title": "Timeformat", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "emailSignature": {
+                            "$id": "#root/emailSignature", 
+                            "title": "Emailsignature", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "isActive": {
+                            "$id": "#root/isActive", 
+                            "title": "Isactive", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "invitationAccepted": {
+                            "$id": "#root/invitationAccepted", 
+                            "title": "Invitationaccepted", 
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "nickname": {
+                            "$id": "#root/nickname", 
+                            "title": "Nickname", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "Role": {
+                            "$id": "#root/Role", 
+                            "title": "Role", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/Role/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "name": {
+                                    "$id": "#root/Role/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "Profile": {
+                            "$id": "#root/Profile", 
+                            "title": "Profile", 
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "$id": "#root/Profile/id", 
+                                    "title": "Id", 
+                                    "type": "integer",
+                                    "default": 0
+                                },
+                                "name": {
+                                    "$id": "#root/Profile/name", 
+                                    "title": "Name", 
+                                    "type": "string",
+                                    "default": "",
+                                    "pattern": "^.*$"
+                                }
+                            }
+                        }
+                ,
+                        "UserAccessTokens": {
+                            "$id": "#root/UserAccessTokens", 
+                            "title": "Useraccesstokens", 
+                            "type": "array",
+                            "default": []
+                        },
+                        "TwoFactorAuthentication": {
+                            "$id": "#root/TwoFactorAuthentication", 
+                            "title": "Twofactorauthentication", 
+                            "type": "null",
+                            "default": null
+                        },
+                        "dateOfBirth": {
+                            "$id": "#root/dateOfBirth", 
+                            "title": "Dateofbirth", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "dateOfAnniversary": {
+                            "$id": "#root/dateOfAnniversary", 
+                            "title": "Dateofanniversary", 
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "UserAccessToken": {
+                            "$id": "#root/UserAccessToken", 
+                            "title": "Useraccesstoken", 
+                            "type": "array",
+                            "default": []
+                        }
+                    }
+                }
+            },
+            "sync_mode": "full_refresh",
+            "destination_sync_mode": "overwrite"
+        }
+        
+    ]
+}

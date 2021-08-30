@@ -1,0 +1,542 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+		"id": {
+			"$id": "#root/id", 
+			"title": "Id", 
+			"type": "integer",
+			"default": 0
+		},
+		"isWinProbabilityModifiedByUser": {
+			"$id": "#root/isWinProbabilityModifiedByUser", 
+			"title": "Iswinprobabilitymodifiedbyuser", 
+			"type": "boolean",
+			"default": true
+		},
+		"title": {
+			"$id": "#root/title", 
+			"title": "Title", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"primaryContact": {
+			"$id": "#root/primaryContact", 
+			"title": "Primarycontact", 
+			"type": "null",
+			"default": null
+		},
+		"lostReason": {
+			"$id": "#root/lostReason", 
+			"title": "Lostreason", 
+			"type": "null",
+			"default": null
+		},
+		"primaryCompany": {
+			"$id": "#root/primaryCompany", 
+			"title": "Primarycompany", 
+			"type": "object",
+			"properties": {
+				"value": {
+					"$id": "#root/primaryCompany/value", 
+					"title": "Value", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"canView": {
+					"$id": "#root/primaryCompany/canView", 
+					"title": "Canview", 
+					"type": "boolean",
+					"default": true
+				},
+				"name": {
+					"$id": "#root/primaryCompany/name", 
+					"title": "Name", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"owner": {
+					"$id": "#root/primaryCompany/owner", 
+					"title": "Owner", 
+					"type": "integer",
+					"default": 0
+				},
+				"id": {
+					"$id": "#root/primaryCompany/id", 
+					"title": "Id", 
+					"type": "integer",
+					"default": 0
+				},
+				"photo": {
+					"$id": "#root/primaryCompany/photo", 
+					"title": "Photo", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"phone": {
+					"$id": "#root/primaryCompany/phone", 
+					"title": "Phone", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"otherPhone": {
+					"$id": "#root/primaryCompany/otherPhone", 
+					"title": "Otherphone", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"imagePath": {
+					"$id": "#root/primaryCompany/imagePath", 
+					"title": "Imagepath", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"winProbability": {
+			"$id": "#root/winProbability", 
+			"title": "Winprobability", 
+			"type": "integer",
+			"default": 0
+		},
+		"owner": {
+			"$id": "#root/owner", 
+			"title": "Owner", 
+			"type": "object",
+			"properties": {
+				"id": {
+					"$id": "#root/owner/id", 
+					"title": "Id", 
+					"type": "integer",
+					"default": 0
+				},
+				"value": {
+					"$id": "#root/owner/value", 
+					"title": "Value", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"name": {
+					"$id": "#root/owner/name", 
+					"title": "Name", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"imagePath": {
+					"$id": "#root/owner/imagePath", 
+					"title": "Imagepath", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"firstName": {
+					"$id": "#root/owner/firstName", 
+					"title": "Firstname", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"lastName": {
+					"$id": "#root/owner/lastName", 
+					"title": "Lastname", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"estimatedCloseDate": {
+			"$id": "#root/estimatedCloseDate", 
+			"title": "Estimatedclosedate", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"dealValue": {
+			"$id": "#root/dealValue", 
+			"title": "Dealvalue", 
+			"type": "integer",
+			"default": 0
+		},
+		"currency": {
+			"$id": "#root/currency", 
+			"title": "Currency", 
+			"type": "object",
+			"properties": {
+				"displayLabel": {
+					"$id": "#root/currency/displayLabel", 
+					"title": "Displaylabel", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"code": {
+					"$id": "#root/currency/code", 
+					"title": "Code", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"value": {
+					"$id": "#root/currency/value", 
+					"title": "Value", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"pipeline": {
+			"$id": "#root/pipeline", 
+			"title": "Pipeline", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"stage": {
+			"$id": "#root/stage", 
+			"title": "Stage", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"source": {
+			"$id": "#root/source", 
+			"title": "Source", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"priority": {
+			"$id": "#root/priority", 
+			"title": "Priority", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"status": {
+			"$id": "#root/status", 
+			"title": "Status", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"description": {
+			"$id": "#root/description", 
+			"title": "Description", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"tags": {
+			"$id": "#root/tags", 
+			"title": "Tags", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"lastCommunicationAt": {
+			"$id": "#root/lastCommunicationAt", 
+			"title": "Lastcommunicationat", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"closedDate": {
+			"$id": "#root/closedDate", 
+			"title": "Closeddate", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"lastActivityBy": {
+			"$id": "#root/lastActivityBy", 
+			"title": "Lastactivityby", 
+			"type": "object",
+			"properties": {
+				"id": {
+					"$id": "#root/lastActivityBy/id", 
+					"title": "Id", 
+					"type": "integer",
+					"default": 0
+				},
+				"value": {
+					"$id": "#root/lastActivityBy/value", 
+					"title": "Value", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"name": {
+					"$id": "#root/lastActivityBy/name", 
+					"title": "Name", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"lastCommunicationBy": {
+			"$id": "#root/lastCommunicationBy", 
+			"title": "Lastcommunicationby", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"closedPipeline": {
+			"$id": "#root/closedPipeline", 
+			"title": "Closedpipeline", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"closedStage": {
+			"$id": "#root/closedStage", 
+			"title": "Closedstage", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"lastCommunicationMode": {
+			"$id": "#root/lastCommunicationMode", 
+			"title": "Lastcommunicationmode", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"createdBy": {
+			"$id": "#root/createdBy", 
+			"title": "Createdby", 
+			"type": "object",
+			"properties": {
+				"id": {
+					"$id": "#root/createdBy/id", 
+					"title": "Id", 
+					"type": "integer",
+					"default": 0
+				},
+				"value": {
+					"$id": "#root/createdBy/value", 
+					"title": "Value", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"name": {
+					"$id": "#root/createdBy/name", 
+					"title": "Name", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"lastActivityAt": {
+			"$id": "#root/lastActivityAt", 
+			"title": "Lastactivityat", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"createdAt": {
+			"$id": "#root/createdAt", 
+			"title": "Createdat", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"lastModifiedBy": {
+			"$id": "#root/lastModifiedBy", 
+			"title": "Lastmodifiedby", 
+			"type": "object",
+			"properties": {
+				"id": {
+					"$id": "#root/lastModifiedBy/id", 
+					"title": "Id", 
+					"type": "integer",
+					"default": 0
+				},
+				"value": {
+					"$id": "#root/lastModifiedBy/value", 
+					"title": "Value", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"name": {
+					"$id": "#root/lastModifiedBy/name", 
+					"title": "Name", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"lastModifiedAt": {
+			"$id": "#root/lastModifiedAt", 
+			"title": "Lastmodifiedat", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"isDeleted": {
+			"$id": "#root/isDeleted", 
+			"title": "Isdeleted", 
+			"type": "boolean",
+			"default": true
+		},
+		"deletedBy": {
+			"$id": "#root/deletedBy", 
+			"title": "Deletedby", 
+			"type": "null",
+			"default": null
+		},
+		"deletedAt": {
+			"$id": "#root/deletedAt", 
+			"title": "Deletedat", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"lastNoteAddedBy": {
+			"$id": "#root/lastNoteAddedBy", 
+			"title": "Lastnoteaddedby", 
+			"type": "object",
+			"properties": {
+				"id": {
+					"$id": "#root/lastNoteAddedBy/id", 
+					"title": "Id", 
+					"type": "null",
+					"default": null
+				},
+				"value": {
+					"$id": "#root/lastNoteAddedBy/value", 
+					"title": "Value", 
+					"type": "null",
+					"default": null
+				},
+				"name": {
+					"$id": "#root/lastNoteAddedBy/name", 
+					"title": "Name", 
+					"type": "null",
+					"default": null
+				}
+			}
+		}
+,
+		"lastNoteAddedAt": {
+			"$id": "#root/lastNoteAddedAt", 
+			"title": "Lastnoteaddedat", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"lastNote": {
+			"$id": "#root/lastNote", 
+			"title": "Lastnote", 
+			"type": "null",
+			"default": null
+		},
+		"createdLongitude": {
+			"$id": "#root/createdLongitude", 
+			"title": "Createdlongitude", 
+			"type": "number",
+			"default": 0.0
+		},
+		"createdLatitude": {
+			"$id": "#root/createdLatitude", 
+			"title": "Createdlatitude", 
+			"type": "number",
+			"default": 0.0
+		},
+		"createdAddress": {
+			"$id": "#root/createdAddress", 
+			"title": "Createdaddress", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"followers": {
+			"$id": "#root/followers", 
+			"title": "Followers", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/followers/items", 
+				"title": "Items", 
+				"type": "object",
+				"properties": {
+					"isOwner": {
+						"$id": "#root/followers/items/isOwner", 
+						"title": "Isowner", 
+						"type": "boolean",
+						"default": true
+					},
+					"userId": {
+						"$id": "#root/followers/items/userId", 
+						"title": "Userid", 
+						"type": "integer",
+						"default": 0
+					},
+					"followerName": {
+						"$id": "#root/followers/items/followerName", 
+						"title": "Followername", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"followerEmailAddress": {
+						"$id": "#root/followers/items/followerEmailAddress", 
+						"title": "Followeremailaddress", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"photo": {
+						"$id": "#root/followers/items/photo", 
+						"title": "Photo", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"canView": {
+						"$id": "#root/followers/items/canView", 
+						"title": "Canview", 
+						"type": "boolean",
+						"default": true
+					},
+					"imagePath": {
+						"$id": "#root/followers/items/imagePath", 
+						"title": "Imagepath", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"type": {
+						"$id": "#root/followers/items/type", 
+						"title": "Type", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		}
+	}
+}

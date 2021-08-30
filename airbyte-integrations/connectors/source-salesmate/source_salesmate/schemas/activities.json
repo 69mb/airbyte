@@ -1,0 +1,420 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$id": "#root/id",
+      "title": "Id",
+      "type": "integer",
+      "default": 0
+    },
+    "title": {
+      "$id": "#root/title",
+      "title": "Title",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "dueDate": {
+      "$id": "#root/dueDate",
+      "title": "Duedate",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "description": {
+      "$id": "#root/description",
+      "title": "Description",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "type": {
+      "$id": "#root/type",
+      "title": "Type",
+      "type": "object",
+      "properties": {
+        "name": {
+          "$id": "#root/type/name",
+          "title": "Name",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "icon": {
+          "$id": "#root/type/icon",
+          "title": "Icon",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "value": {
+          "$id": "#root/type/value",
+          "title": "Value",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        }
+      }
+    },
+    "isCompleted": {
+      "$id": "#root/isCompleted",
+      "title": "Iscompleted",
+      "type": "boolean",
+      "default": true
+    },
+    "duration": {
+      "$id": "#root/duration",
+      "title": "Duration",
+      "type":  "string",
+      "default": ""
+    },
+    "owner": {
+      "$id": "#root/owner",
+      "title": "Owner",
+      "type": "object",
+      "properties": {
+        "id": {
+          "$id": "#root/owner/id",
+          "title": "Id",
+          "type": "integer",
+          "default": 0
+        },
+        "value": {
+          "$id": "#root/owner/value",
+          "title": "Value",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "imagePath": {
+          "$id": "#root/owner/imagePath",
+          "title": "Imagepath",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "name": {
+          "$id": "#root/owner/name",
+          "title": "Name",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "firstName": {
+          "$id": "#root/owner/firstName",
+          "title": "Firstname",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "lastName": {
+          "$id": "#root/owner/lastName",
+          "title": "Lastname",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        }
+      }
+    },
+    "tags": {
+      "$id": "#root/tags",
+      "title": "Tags",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "primaryContact": {
+      "$id": "#root/primaryContact",
+      "title": "Primarycontact",
+      "type": "null",
+      "default": null
+    },
+    "relatedTo": {
+      "$id": "#root/relatedTo",
+      "title": "Relatedto",
+      "type": "null",
+      "default": null
+    },
+    "primaryCompany": {
+      "$id": "#root/primaryCompany",
+      "title": "Primarycompany",
+      "type": "null",
+      "default": null
+    },
+    "outcome": {
+      "$id": "#root/outcome",
+      "title": "Outcome",
+      "type": "null",
+      "default": null
+    },
+    "isCalendarInvite": {
+      "$id": "#root/isCalendarInvite",
+      "title": "Iscalendarinvite",
+      "type": "boolean",
+      "default": true
+    },
+    "completedAt": {
+      "$id": "#root/completedAt",
+      "title": "Completedat",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "relatedToModule": {
+      "$id": "#root/relatedToModule",
+      "title": "Relatedtomodule",
+      "type": "null",
+      "default": null
+    },
+    "createdBy": {
+      "$id": "#root/createdBy",
+      "title": "Createdby",
+      "type": "object",
+      "properties": {
+        "id": {
+          "$id": "#root/createdBy/id",
+          "title": "Id",
+          "type": "integer",
+          "default": 0
+        },
+        "value": {
+          "$id": "#root/createdBy/value",
+          "title": "Value",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "name": {
+          "$id": "#root/createdBy/name",
+          "title": "Name",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        }
+      }
+    },
+    "createdAt": {
+      "$id": "#root/createdAt",
+      "title": "Createdat",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "lastModifiedBy": {
+      "$id": "#root/lastModifiedBy",
+      "title": "Lastmodifiedby",
+      "type": "object",
+      "properties": {
+        "id": {
+          "$id": "#root/lastModifiedBy/id",
+          "title": "Id",
+          "type": "integer",
+          "default": 0
+        },
+        "value": {
+          "$id": "#root/lastModifiedBy/value",
+          "title": "Value",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "name": {
+          "$id": "#root/lastModifiedBy/name",
+          "title": "Name",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        }
+      }
+    },
+    "lastModifiedAt": {
+      "$id": "#root/lastModifiedAt",
+      "title": "Lastmodifiedat",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "isDeleted": {
+      "$id": "#root/isDeleted",
+      "title": "Isdeleted",
+      "type": "boolean",
+      "default": true
+    },
+    "deletedBy": {
+      "$id": "#root/deletedBy",
+      "title": "Deletedby",
+      "type": "null",
+      "default": null
+    },
+    "deletedAt": {
+      "$id": "#root/deletedAt",
+      "title": "Deletedat",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "lastNoteAddedBy": {
+      "$id": "#root/lastNoteAddedBy",
+      "title": "Lastnoteaddedby",
+      "type": "object",
+      "properties": {
+        "id": {
+          "$id": "#root/lastNoteAddedBy/id",
+          "title": "Id",
+          "type": "null",
+          "default": null
+        },
+        "value": {
+          "$id": "#root/lastNoteAddedBy/value",
+          "title": "Value",
+          "type": "null",
+          "default": null
+        },
+        "name": {
+          "$id": "#root/lastNoteAddedBy/name",
+          "title": "Name",
+          "type": "null",
+          "default": null
+        }
+      }
+    },
+    "lastNoteAddedAt": {
+      "$id": "#root/lastNoteAddedAt",
+      "title": "Lastnoteaddedat",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "lastNote": {
+      "$id": "#root/lastNote",
+      "title": "Lastnote",
+      "type": "null",
+      "default": null
+    },
+    "createdLongitude": {
+      "$id": "#root/createdLongitude",
+      "title": "Createdlongitude",
+      "type": "null",
+      "default": null
+    },
+    "createdLatitude": {
+      "$id": "#root/createdLatitude",
+      "title": "Createdlatitude",
+      "type": "null",
+      "default": null
+    },
+    "createdAddress": {
+      "$id": "#root/createdAddress",
+      "title": "Createdaddress",
+      "type": "null",
+      "default": null
+    },
+    "recurrenceId": {
+      "$id": "#root/recurrenceId",
+      "title": "Recurrenceid",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "recordingUrl": {
+      "$id": "#root/recordingUrl",
+      "title": "Recordingurl",
+      "type": "null",
+      "default": null
+    },
+    "recurrence": {
+      "$id": "#root/recurrence",
+      "title": "Recurrence",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "associatedCallId": {
+      "$id": "#root/associatedCallId",
+      "title": "Associatedcallid",
+      "type": "object",
+      "properties": {
+        "id": {
+          "$id": "#root/associatedCallId/id",
+          "title": "Id",
+          "type": "null",
+          "default": null
+        },
+        "recordingPath": {
+          "$id": "#root/associatedCallId/recordingPath",
+          "title": "Recordingpath",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        }
+      }
+    },
+    "followers": {
+      "$id": "#root/followers",
+      "title": "Followers",
+      "type": "array",
+      "default": [],
+      "items": {
+        "$id": "#root/followers/items",
+        "title": "Items",
+        "type": "object",
+        "properties": {
+          "isOwner": {
+            "$id": "#root/followers/items/isOwner",
+            "title": "Isowner",
+            "type": "boolean",
+            "default": true
+          },
+          "userId": {
+            "$id": "#root/followers/items/userId",
+            "title": "Userid",
+            "type": "integer",
+            "default": 0
+          },
+          "followerName": {
+            "$id": "#root/followers/items/followerName",
+            "title": "Followername",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "followerEmailAddress": {
+            "$id": "#root/followers/items/followerEmailAddress",
+            "title": "Followeremailaddress",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "photo": {
+            "$id": "#root/followers/items/photo",
+            "title": "Photo",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "canView": {
+            "$id": "#root/followers/items/canView",
+            "title": "Canview",
+            "type": "boolean",
+            "default": true
+          },
+          "imagePath": {
+            "$id": "#root/followers/items/imagePath",
+            "title": "Imagepath",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "type": {
+            "$id": "#root/followers/items/type",
+            "title": "Type",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          }
+        }
+      }
+    }
+  }
+}

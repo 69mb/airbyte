@@ -1,0 +1,243 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+		"id": {
+			"$id": "#root/id", 
+			"title": "Id", 
+			"type": "integer",
+			"default": 0
+		},
+		"firstName": {
+			"$id": "#root/firstName", 
+			"title": "Firstname", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"lastName": {
+			"$id": "#root/lastName", 
+			"title": "Lastname", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"email": {
+			"$id": "#root/email", 
+			"title": "Email", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"mobile": {
+			"$id": "#root/mobile", 
+			"title": "Mobile", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"profileId": {
+			"$id": "#root/profileId", 
+			"title": "Profileid", 
+			"type": "integer",
+			"default": 0
+		},
+		"roleId": {
+			"$id": "#root/roleId", 
+			"title": "Roleid", 
+			"type": "integer",
+			"default": 0
+		},
+		"phoneNo": {
+			"$id": "#root/phoneNo", 
+			"title": "Phoneno", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"extensionNo": {
+			"$id": "#root/extensionNo", 
+			"title": "Extensionno", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"addressLine1": {
+			"$id": "#root/addressLine1", 
+			"title": "Addressline1", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"addressLine2": {
+			"$id": "#root/addressLine2", 
+			"title": "Addressline2", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"area": {
+			"$id": "#root/area", 
+			"title": "Area", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"city": {
+			"$id": "#root/city", 
+			"title": "City", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"state": {
+			"$id": "#root/state", 
+			"title": "State", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"country": {
+			"$id": "#root/country", 
+			"title": "Country", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"zipCode": {
+			"$id": "#root/zipCode", 
+			"title": "Zipcode", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"timezone": {
+			"$id": "#root/timezone", 
+			"title": "Timezone", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"photo": {
+			"$id": "#root/photo", 
+			"title": "Photo", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"dateFormat": {
+			"$id": "#root/dateFormat", 
+			"title": "Dateformat", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"timeFormat": {
+			"$id": "#root/timeFormat", 
+			"title": "Timeformat", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"emailSignature": {
+			"$id": "#root/emailSignature", 
+			"title": "Emailsignature", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"isActive": {
+			"$id": "#root/isActive", 
+			"title": "Isactive", 
+			"type": "boolean",
+			"default": true
+		},
+		"invitationAccepted": {
+			"$id": "#root/invitationAccepted", 
+			"title": "Invitationaccepted", 
+			"type": "boolean",
+			"default": true
+		},
+		"nickname": {
+			"$id": "#root/nickname", 
+			"title": "Nickname", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"Role": {
+			"$id": "#root/Role", 
+			"title": "Role", 
+			"type": "object",
+			"properties": {
+				"id": {
+					"$id": "#root/Role/id", 
+					"title": "Id", 
+					"type": "integer",
+					"default": 0
+				},
+				"name": {
+					"$id": "#root/Role/name", 
+					"title": "Name", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"Profile": {
+			"$id": "#root/Profile", 
+			"title": "Profile", 
+			"type": "object",
+			"properties": {
+				"id": {
+					"$id": "#root/Profile/id", 
+					"title": "Id", 
+					"type": "integer",
+					"default": 0
+				},
+				"name": {
+					"$id": "#root/Profile/name", 
+					"title": "Name", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"UserAccessTokens": {
+			"$id": "#root/UserAccessTokens", 
+			"title": "Useraccesstokens", 
+			"type": "array",
+			"default": []
+		},
+		"TwoFactorAuthentication": {
+			"$id": "#root/TwoFactorAuthentication", 
+			"title": "Twofactorauthentication", 
+			"type": "null",
+			"default": null
+		},
+		"dateOfBirth": {
+			"$id": "#root/dateOfBirth", 
+			"title": "Dateofbirth", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"dateOfAnniversary": {
+			"$id": "#root/dateOfAnniversary", 
+			"title": "Dateofanniversary", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"UserAccessToken": {
+			"$id": "#root/UserAccessToken", 
+			"title": "Useraccesstoken", 
+			"type": "array",
+			"default": []
+		}
+	}
+}
