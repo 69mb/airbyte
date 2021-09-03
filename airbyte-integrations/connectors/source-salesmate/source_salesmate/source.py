@@ -74,7 +74,7 @@ class SalesmateStream(HttpStream, ABC):
     See the reference docs for the full list of configurable options.
     """
 
-    url_base = 'https://apis.salesmate.io/'
+    url_base = 'https://apis.salesmate.io/v3/'
     # url_base = "https://4a28bad45212.ngrok.io/"
     http_method = "POST"
     _current_page = 1
@@ -121,7 +121,7 @@ class Companies(SalesmateStream):
     def path(
         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
     ) -> str:
-        return "v2/companies/search"
+        return "companies/search"
     
     def request_body_json(
         self,
@@ -129,7 +129,7 @@ class Companies(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":["id","name","website","owner","phone","skypeId","linkedInHandle","googlePlusHandle","website","otherPhone","facebookHandle","twitterHandle","currency","billingAddressLine1","billingAddressLine2","billingCity","billingState","billingZipCode","billingCountry","description","tags","numberOfEmployees","annualRevenue","emailOptOut","smsOptOut","shippingAddressLine1","shippingAddressLine2","shippingCity","shippingState","shippingCountry","shippingZipCode","createdBy","createdAt","lastModifiedBy","lastModifiedAt","isDeleted","deletedBy","deletedAt","latitude","longitude","lastNoteAddedAt","lastNoteAddedBy","lastNote","lastCommunicationAt","lastCommunicationMode","lastCommunicationBy","wonDealCount","skypetotalAmountOfWonDealId","lostDealCount","totalAmountOfLostDeal","totalAmountOfOpenDeal","openDealCount","totalActivities","closedActivities","openActivities","createdLongitude","createdLatitude","createdAddress","instagramHandle","associatedContacts","textCustomField1","textCustomField2","textCustomField3","textCustomField4","textCustomField5","textCustomField6","textCustomField7","textCustomField8","textCustomField9","intCustomField1","decimalCustomField1","multiSelectCustomField1","company"],"query":{"condition":"NOT_EMPTY","moduleName":"Company","field":{"fieldName":"name"}}}')
+        return json.loads('{"fields":[],"query":{}}')
     
 class Activities(SalesmateStream):
     primary_key = "id"
@@ -137,7 +137,7 @@ class Activities(SalesmateStream):
     def path(
         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
     ) -> str:
-        return "v2/activities/search"
+        return "activities/search"
     
     def request_body_json(
         self,
@@ -145,7 +145,7 @@ class Activities(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":["id","title","dueDate","description","type","isCompleted","duration","owner","tags","primaryContact","relatedTo","primaryCompany","outcome","isCalendarInvite","completedAt","relatedToModule","createdBy","createdAt","lastModifiedBy","lastModifiedAt","isDeleted","deletedBy","deletedAt","lastNoteAddedBy","lastNoteAddedAt","lastNote","createdLongitude","createdLatitude","createdAddress","recurrenceId","recordingUrl","recurrence","associatedCallId","followers"],"query":{"condition":"NOT_EMPTY","moduleName":"Task","field":{"fieldName":"title"}}}')
+        return json.loads('{"fields":[],"query":{}}')
 
 class Contacts(SalesmateStream):
     primary_key = "id"
@@ -153,7 +153,7 @@ class Contacts(SalesmateStream):
     def path(
         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
     ) -> str:
-        return "v2/contacts/search"
+        return "contacts/search"
     
     def request_body_json(
         self,
@@ -161,7 +161,7 @@ class Contacts(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":["id","firstName","lastName","mobile","email","company","designation","owner","type","timezone","website","facebookHandle","linkedInHandle","instagramHandle","emailOptOut","emailOptOutReason","smsOptOut","description","tags","billingAddressLine1","billingAddressLine2","billingCity","billingCountry","name","createdBy","createdAt","lastModifiedBy","lastModifiedAt","photo","isDeleted","deletedBy","deletedAt","latitude","longitude","lastNoteAddedBy","lastNoteAddedAt","lastNote","createdLongitude","createdLatitude","createdAddress","salesmateScore","lastCommunicationAt","lastCommunicationMode","lastCommunicationBy","wonDealCount","totalAmountOfWonDeal","lostDealCount","totalAmountOfLostDeal","totalActivities","openDealCount","closedActivities","lastEmailReceivedAt","lastEmailSentAt","emailMessageCount","totalAmountOfOpenDeal","openActivities"],"query":{"condition":"NOT_EMPTY","moduleName":"Contact","field":{"fieldName":"name"}}}')
+        return json.loads('{"fields":[],"query":{}}')
 
 class Deals(SalesmateStream):
     primary_key = "id"
@@ -169,7 +169,7 @@ class Deals(SalesmateStream):
     def path(
         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
     ) -> str:
-        return "v2/deals/search"
+        return "deals/search"
     
     def request_body_json(
         self,
@@ -177,7 +177,7 @@ class Deals(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":["id","isWinProbabilityModifiedByUser","title","primaryContact","lostReason","primaryCompany","winProbability","owner","estimatedCloseDate","dealValue","currency","pipeline","stage","source","priority","status","description","tags","lastCommunicationAt","closedDate","lastActivityBy","lastCommunicationBy","closedPipeline","closedStage","lastCommunicationMode","createdBy","lastActivityAt","createdAt","lastModifiedBy","lastModifiedAt","isDeleted","deletedBy","deletedAt","lastNoteAddedBy","lastNoteAddedAt","lastNote","createdLongitude","createdLatitude","createdAddress","followers"],"query":{"condition":"NOT_EMPTY","moduleName":"Deal","field":{"fieldName":"title"}}}')
+        return json.loads('{"fields":[],"query":{}}')
 
 class Users(SalesmateStream):
     primary_key = "id"
@@ -186,7 +186,7 @@ class Users(SalesmateStream):
     def path(
         self, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
     ) -> str:
-        return "v1/users"
+        return "users"
     
     def next_page_token(self, response: requests.Response) -> Optional[Mapping[str, Any]]:
         return None
