@@ -129,7 +129,7 @@ class Companies(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":[],"query":{}}')
+        return json.loads('{"fields":["annualRevenue","associatedContacts","billingAddressLine1","billingAddressLine2","billingCity","billingCountry","billingState","billingZipCode","checkboxCustomField1","closedActivities","company","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","currency","decimalCustomField1","deletedAt","deletedBy","description","emailOptOut","facebookHandle","googlePlusHandle","id","instagramHandle","intCustomField1","intCustomField2","isDeleted","lastCommunicationAt","lastCommunicationBy","lastCommunicationMode","lastModifiedAt","lastModifiedBy","lastNote","lastNoteAddedAt","lastNoteAddedBy","latitude","linkedInHandle","longitude","lostDealCount","multiSelectCustomField1","multiSelectCustomField2","name","numberOfEmployees","openActivities","openDealCount","otherPhone","owner","phone","shippingAddressLine1","shippingAddressLine2","shippingCity","shippingCountry","shippingState","shippingZipCode","skypeId","smsOptOut","tags","textCustomField1","textCustomField10","textCustomField2","textCustomField3","textCustomField4","textCustomField5","textCustomField6","textCustomField7","textCustomField8","textCustomField9","totalActivities","totalAmountOfLostDeal","totalAmountOfOpenDeal","totalAmountOfWonDeal","twitterHandle","type","website","wonDealCount"],"query":{}}')
     
 class Activities(SalesmateStream):
     primary_key = "id"
@@ -145,7 +145,7 @@ class Activities(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":[],"query":{}}')
+        return json.loads('{"fields":["associatedCallId","automationId","automationInstanceId","automationInstanceNodeId","calendarEventId","calendarId","completedAt","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","deletedAt","deletedBy","description","dueDate","duration","endDate","followers","id","isCalendarInvite","isCompleted","isCreatedFromSystem","isDeleted","lastModifiedAt","lastModifiedBy","lastNote","lastNoteAddedAt","lastNoteAddedBy","location","meetingSchedulerId","note","outcome","owner","primaryCompany","primaryContact","purpose","recordingUrl","recurrence","recurrenceId","relatedTo","relatedToModule","seriesMasterId","tags","title","type","videoURL","visibility"],"query":{}}')
 
 class Contacts(SalesmateStream):
     primary_key = "id"
@@ -161,7 +161,7 @@ class Contacts(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":[],"query":{}}')
+        return json.loads('{"fields":["billingAddressLine1","billingAddressLine2","billingCity","billingCountry","billingState","billingZipCode","browser","browserVersion","clicksOfLastEmailCount","closedActivities","company","countryCode","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","currentUrl","decimalCustomField1","deletedAt","deletedBy","description","designation","device","email","emailMessageCount","emailOptOut","emailOptOutReason","eventType","facebookHandle","firstName","googlePlusHandle","host","id","initialReferralDomain","initialReferralUrl","instagramHandle","ipAddress","isDeleted","lastCommunicationAt","lastCommunicationBy","lastCommunicationMode","lastEmailReceivedAt","lastEmailSentAt","lastModifiedAt","lastModifiedBy","lastName","lastNote","lastNoteAddedAt","lastNoteAddedBy","lastSendEmailId","latitude","library","libraryVersion","linkedInHandle","longitude","lostDealCount","mobile","name","openActivities","openDealCount","os","otherPhone","owner","pathName","phone","referralDomain","referralUrl","region","salesmateScore","screenHeight","screenWidth","searchEngine","shippingAddressLine1","shippingAddressLine2","shippingCity","shippingCountry","shippingState","shippingZipCode","skypeId","smsOptOut","tags","timezone","totalActivities","totalAmountOfLostDeal","totalAmountOfOpenDeal","totalAmountOfWonDeal","twitterHandle","type","userId","utmCampaign","utmContent","utmMedium","utmSource","utmTerm","viewsOfLastEmailCount","website","wonDealCount"],"query":{}}')
 
 class Deals(SalesmateStream):
     primary_key = "id"
@@ -177,7 +177,7 @@ class Deals(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":[],"query":{}}')
+        return json.loads('{"fields":["closedDate","closedPipeline","closedStage","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","currency","dealValue","deletedAt","deletedBy","description","estimatedCloseDate","followers","id","isDeleted","isWinProbabilityModifiedByUser","lastActivityAt","lastActivityBy","lastCommunicationAt","lastCommunicationBy","lastCommunicationMode","lastModifiedAt","lastModifiedBy","lastNote","lastNoteAddedAt","lastNoteAddedBy","lostReason","owner","pipeline","primaryCompany","primaryContact","priority","source","stage","status","tags","title","winProbability"],"query":{}}')
 
 class Users(SalesmateStream):
     primary_key = "id"
