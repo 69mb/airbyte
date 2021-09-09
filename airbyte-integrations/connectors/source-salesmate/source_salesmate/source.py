@@ -145,7 +145,7 @@ class Activities(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":["associatedCallId","automationId","automationInstanceId","automationInstanceNodeId","calendarEventId","calendarId","completedAt","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","deletedAt","deletedBy","description","dueDate","duration","endDate","followers","id","isCalendarInvite","isCompleted","isCreatedFromSystem","isDeleted","lastModifiedAt","lastModifiedBy","lastNote","lastNoteAddedAt","lastNoteAddedBy","location","meetingSchedulerId","note","outcome","owner","primaryCompany","primaryContact","purpose","recordingUrl","recurrence","recurrenceId","relatedTo","relatedToModule","seriesMasterId","tags","title","type","videoURL","visibility"],"query":{}}')
+        return json.loads('{"fields":["associatedCallId","automationId","automationInstanceId","automationInstanceNodeId","calendarEventId","calendarId","completedAt","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","deletedAt","description","dueDate","duration","endDate","followers","id","isCalendarInvite","isCompleted","isCreatedFromSystem","isDeleted","lastModifiedAt","lastModifiedBy","lastNote","lastNoteAddedAt","lastNoteAddedBy","location","meetingSchedulerId","note","outcome","owner","primaryCompany","primaryContact","purpose","recordingUrl","recurrence","recurrenceId","relatedTo","relatedToModule","seriesMasterId","tags","title","type","videoURL","visibility"],"query":{}}')
 
 class Contacts(SalesmateStream):
     primary_key = "id"
@@ -177,7 +177,7 @@ class Deals(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":["closedDate","closedPipeline","closedStage","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","currency","dealValue","deletedAt","deletedBy","description","estimatedCloseDate","followers","id","isDeleted","isWinProbabilityModifiedByUser","lastActivityAt","lastActivityBy","lastCommunicationAt","lastCommunicationBy","lastCommunicationMode","lastModifiedAt","lastModifiedBy","lastNote","lastNoteAddedAt","lastNoteAddedBy","lostReason","owner","pipeline","primaryCompany","primaryContact","priority","source","stage","status","tags","title","winProbability"],"query":{}}')
+        return json.loads('{"fields":["closedDate","closedPipeline","closedStage","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","currency","dealValue","deletedAt","description","estimatedCloseDate","followers","id","isDeleted","isWinProbabilityModifiedByUser","lastActivityAt","lastCommunicationAt","lastCommunicationBy","lastCommunicationMode","lastModifiedAt","lastModifiedBy","lastNote","lastNoteAddedAt","lastNoteAddedBy","lostReason","owner","pipeline","primaryCompany","primaryContact","priority","source","stage","status","tags","title","winProbability"],"query":{}}')
 
 class Users(SalesmateStream):
     primary_key = "id"
