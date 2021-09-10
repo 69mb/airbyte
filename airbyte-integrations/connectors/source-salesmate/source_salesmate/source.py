@@ -177,7 +177,7 @@ class Deals(SalesmateStream):
         stream_slice: Mapping[str, Any] = None,
         next_page_token: Mapping[str, Any] = None,
     ) -> Optional[Mapping]:
-        return json.loads('{"fields":["closedDate","closedPipeline","closedStage","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","currency","dealValue","deletedAt","description","estimatedCloseDate","followers","id","isDeleted","isWinProbabilityModifiedByUser","lastActivityAt","lastCommunicationAt","lastCommunicationBy","lastCommunicationMode","lastModifiedAt","lastModifiedBy","lastNote","lastNoteAddedAt","lastNoteAddedBy","lostReason","owner","pipeline","primaryCompany","primaryContact","priority","source","stage","status","tags","title","winProbability"],"query":{}}')
+        return json.loads('{"fields":["closedDate","closedPipeline","closedStage","createdAddress","createdAt","createdBy","createdLatitude","createdLongitude","currency","dealValue","deletedAt","description","estimatedCloseDate","followers","id","isDeleted","isWinProbabilityModifiedByUser","lastActivityAt","lastCommunicationAt","lastCommunicationBy","lastCommunicationMode","lastModifiedAt","lastModifiedBy","lastNote","lastNoteAddedAt","lastNoteAddedBy","lostReason","owner","pipeline","PrimaryCompany.name","PrimaryContact.name","priority","source","stage","status","tags","title","winProbability"],"query":{}}')
 
 class Users(SalesmateStream):
     primary_key = "id"
