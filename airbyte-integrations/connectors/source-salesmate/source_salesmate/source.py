@@ -26,6 +26,7 @@ from typing import Any, Iterable, List, Mapping, MutableMapping, Optional, Tuple
 
 import requests
 import json
+from airbyte_cdk import AirbyteLogger
 from airbyte_cdk.sources import AbstractSource
 from airbyte_cdk.sources.streams import Stream
 from airbyte_cdk.sources.streams.http import HttpStream
@@ -75,9 +76,10 @@ class SalesmateStream(HttpStream, ABC):
     """
 
     url_base = 'https://apis.salesmate.io/v3/'
-    # url_base = "https://4a28bad45212.ngrok.io/"
+    # url_base = 'https://e71d-169-239-252-50.ngrok.io/v3/'
     http_method = "POST"
-    _current_page = 1
+    _current_row = 0
+    logger = AirbyteLogger()
 
     def next_page_token(self, response: requests.Response) -> Optional[Mapping[str, Any]]:
         """
@@ -94,9 +96,9 @@ class SalesmateStream(HttpStream, ABC):
         :return If there is another page in the result, a mapping (e.g: dict) containing information needed to query the next page in the response.
                 If there are no more pages in the result, return None.
         """
-        if (self._current_page < response.json()['Data']["totalPages"]):
-            self._current_page+=1
-            return {'pageNo': self._current_page} 
+        if (self._current_row < response.json()['Data']["totalRows"]):
+            self._current_row += len(response.json()['Data']["data"])
+            return {'from': self._current_row} 
 
     def request_params(
         self, stream_state: Mapping[str, Any], stream_slice: Mapping[str, any] = None, next_page_token: Mapping[str, Any] = None
@@ -112,6 +114,7 @@ class SalesmateStream(HttpStream, ABC):
 
     def parse_response(self, response: requests.Response, **kwargs) -> Iterable[Mapping]:
         response_json = response.json()
+        # self.logger.info("totalPages={} totalRows={} numRecords={} data[0].id={}".format(response.json()['Data']["totalPages"], response.json()['Data']["totalRows"], len(response.json()['Data']["data"]), response.json()['Data']["data"][0]["id"]))
         yield from response_json.get("Data", []).get("data", [])  # Salesmate puts records in a container array "data"
 
 
