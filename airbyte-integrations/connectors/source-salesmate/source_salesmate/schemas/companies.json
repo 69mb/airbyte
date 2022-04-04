@@ -605,6 +605,20 @@
 			"default": "",
 			"pattern": "^.*$"
 		},
+		"textCustomField14": {
+			"$id": "#root/textCustomField14", 
+			"title": "TextCustomField14", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"textCustomField16": {
+			"$id": "#root/textCustomField16", 
+			"title": "TextCustomField16", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
 		"company": {
 			"$id": "#root/company", 
 			"title": "Company", 
